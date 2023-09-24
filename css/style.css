@@ -1,0 +1,37 @@
+body {
+  background-color: #f5f7fa;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.titulo-nome {
+  color: #0b0c12;
+  font-family: Fira Sans;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  margin-top: 6.25rem;
+  /* sombra-escura */
+  text-shadow: 1px 3px 5px rgba(11, 12, 18, 0.2);
+}
+
+.subtitulo-nome {
+  color: #0b0c12;
+  /* sombra-escura */
+  text-shadow: 1px 3px 5px rgba(11, 12, 18, 0.2);
+  font-family: Fira Sans;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+div {
+  place-self: center;
+}
