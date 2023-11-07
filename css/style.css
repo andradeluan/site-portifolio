@@ -4,7 +4,6 @@ body {
 }
 /*NAV*/
 header {
-  margin-top: -2.5em;
   position: fixed;
   border-bottom: 3px solid #d7263d;
   background: #2e294e;
