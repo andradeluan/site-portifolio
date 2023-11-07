@@ -199,7 +199,7 @@ h2 {
 #projetos h3 {
   margin-top: 1.85rem;
   text-align: center;
-  color: #F5F7FA;
+  color: #f5f7fa;
   /* sombra-escura */
   text-shadow: 1px 3px 5px rgba(11, 12, 18, 0.2);
   font-family: Poppins;
@@ -225,7 +225,7 @@ h2 {
   padding: 1rem 0;
   width: 20rem;
   flex-shrink: 0;
-  color:  #f5f7fa;
+  color: #f5f7fa;
   font-family: Poppins;
   font-size: 1.25rem;
   font-style: normal;
@@ -233,3 +233,44 @@ h2 {
   line-height: normal;
 }
 /*FIM PROJETOS*/
+/*INICIO SOBRE*/
+#contato {
+  height: 15rem;
+  background-color: #f5f7fa;
+}
+h4 {
+  padding-top: 1.85rem;
+  text-align: center;
+  color: #0b0c12;
+  /* sombra-escura */
+  text-shadow: 1px 3px 5px rgba(11, 12, 18, 0.2);
+  font-family: Poppins;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#contato div {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1rem;
+  margin-left: 15%;
+}
+#contato span{
+  margin-bottom: 0.5rem;
+}
+/*FIM SOBRE*/
+/*INCIO FOOTER*/
+footer {
+  color: #F5F7FA;
+  /* sombra-escura */
+  text-shadow: 1px 3px 5px rgba(11, 12, 18, 0.20);
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 1rem 2rem;
+  
+}
