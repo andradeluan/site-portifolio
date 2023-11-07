@@ -4,6 +4,7 @@ body {
 }
 /*NAV*/
 header {
+  position: fixed;
   border-bottom: 3px solid #d7263d;
   background: #2e294e;
   /*position: fixed;
@@ -32,7 +33,6 @@ header .ponto {
   line-height: normal;
 }
 nav {
-  position: fixed;
   margin-left: auto;
   margin-right: 8.75rem;
 }
