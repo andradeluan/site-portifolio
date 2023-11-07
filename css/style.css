@@ -23,8 +23,13 @@ header h1 {
   line-height: normal;
   margin-left: 8.75rem;
 }
-.ponto {
+header .ponto {
   color: #d7263d;
+  font-family: Poppins;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 nav {
   margin-left: auto;
@@ -53,7 +58,7 @@ nav a {
 div {
   display: block;
 }
-.home {
+#home {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -70,10 +75,16 @@ div {
   font-family: Poppins;
   font-weight: 700;
   word-wrap: break-word;
-  text-decoration: none;
 }
 .t-home h1 {
   color: #f5f7fa;
+  font-size: 64px;
+  font-family: Poppins;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+.t-home .ponto {
+  color: #d7263d;
   font-size: 64px;
   font-family: Poppins;
   font-weight: 700;
@@ -93,8 +104,8 @@ div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: start;
+  margin-top: 1rem;
 }
-
 .bnts img {
   margin-right: 2rem;
 }
@@ -116,7 +127,7 @@ div {
   grid-column: 2;
   display: flex;
   align-items: center;
-  padding: 0.6rem 2.5rem;
+  padding: 0rem 2.5rem;
   background-color: #1c2128; /* Cor de fundo */
   color: #f5f7fa; /* Cor do texto */
   text-decoration: none;
@@ -129,7 +140,7 @@ div {
 
 /*FIM HOME*/
 /*INICIO SOBRE*/
-.sobre {
+#sobre {
   height: 26.125rem;
   background-color: #f5f7fa;
 }
@@ -175,4 +186,50 @@ h2 {
   min-width: 35rem;
 }
 /*FIM SOBRE*/
-/*INICIO PORJETOS*/
+/*INICIO PROJETOS*/
+#projetos {
+  height: 24rem;
+  place-content: center;
+}
+#projetos section {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+#projetos h3 {
+  margin-top: 1.85rem;
+  text-align: center;
+  color: #F5F7FA;
+  /* sombra-escura */
+  text-shadow: 1px 3px 5px rgba(11, 12, 18, 0.2);
+  font-family: Poppins;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#projetos article {
+  display: grid;
+  place-content: center;
+  width: 20rem;
+  height: 12.5rem;
+  border-radius: 0.5rem;
+  background: var(--Neutra-4, #c0c5cc);
+  /* sombra-clara */
+  box-shadow: 0px 1px 1px 0px rgba(245, 247, 250, 0.2);
+}
+#projetos span {
+  margin: auto;
+  text-align: center;
+  background: #2e294e;
+  padding: 1rem 0;
+  width: 20rem;
+  flex-shrink: 0;
+  color:  #f5f7fa;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+/*FIM PROJETOS*/
