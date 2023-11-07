@@ -60,7 +60,6 @@ div {
   display: block;
 }
 #home {
-  margin-top: 6.25rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
