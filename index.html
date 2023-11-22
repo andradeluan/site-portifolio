@@ -10,13 +10,15 @@
 	<link rel="stylesheet" href="/css/normalize.css">
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="shortcut icon" href="/image/icons/_..svg">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 	<title>>Luan Andrade.</title>
 </head>
 
 <body>
-	<header>
+	<header id="header">
 		<h1>>Luan Andrade<span class="ponto ">.</span></h1>
-		<nav>
+		<i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+		<nav id="itens">
 			<ul>
 				<li><a href="#home">HOME</a></li>
 				<li><a href="#sobre">SOBRE MIM</a></li>
@@ -78,10 +80,19 @@
 		</div>
 	</div>
 	<footer>
-		<span>Feito por Luan Andrade.</span>
+		<p>© 2023 Luan Andrade. Todos os direitos reservados.</p>
 	</footer>
-
-
 </body>
-
+<script>
+	function clickMenu() {
+		if (itens.style.display == 'block') {
+			itens.style.display = 'none'
+			header.style.height = '6.25rem'
+		}
+		else{
+      itens.style.display = 'block'
+			header.style.height = '20rem'
+    }
+  }
+</script>
 </html>
