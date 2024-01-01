@@ -6,93 +6,50 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Recursive:wght,CASL,CRSV,MONO@400,0,0,1;700,1,0,1&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/css/reset.css">
 	<link rel="stylesheet" href="/css/normalize.css">
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="shortcut icon" href="/image/icons/_..svg">
-	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 	<title>>Luan Andrade.</title>
 </head>
 
 <body>
-	<header id="header">
-		<h1>>Luan Andrade<span class="ponto ">.</span></h1>
-		<i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
-		<nav id="itens">
+	<header>
+		<h1>Luan Andrade<span>.</span></h1>
+		<nav>
 			<ul>
-				<li><a href="#home">HOME</a></li>
-				<li><a href="#sobre">SOBRE MIM</a></li>
-				<li><a href="#projetos">PROJETOS</a></li>
-				<li><a href="#contato">CONTATO</a></li>
+				<li><a>Home</a></li><!--colocar o href-->
+				<li><a>Sobre</a></li>
+				<li><a>Projetos</a></li>
+				<li><a>Contato</a></li>
 			</ul>
 		</nav>
 	</header>
-	<div id="home">
-		<div class="t-home">
-			<span>Bem-Vindo ✌️, eu sou</span>
-			<h1>>Luan Andrade<span class="ponto">.</span></h1>
-			<span>Desenvolvedor & Cientista de Dados</span>
-			<div class="bnts">
-				<a href="https://www.linkedin.com/in/andradeluan/" class="bnt-1"><img src="/image/icons/icon-linkedin.svg">
-					<p>Linkedin</p>
-				</a>
-				<a href="https://github.com/andradeluan" class="bnt-2"><img src="/image/icons/icon-github.svg">
-					<p>Github</p>
-				</a>
+	<main>
+		<section id="home">
+			<div class="efeito1"></div>
+			<div class="texto-home">
+				<span class="texto1-home">Bem-Vindo ✌️</span>
+				<h1 class="texto2-home">Eu sou Luan Andrade</h1>
+				<span class="texto3-home">Desenvolvedor Front-End <span class="e">&</span> Cientista de Dados</span>
 			</div>
-		</div>
-		<div class="i-home">
-			<img src="/image/image-home.svg" alt="imagem home">
-		</div>
-	</div>
-	<div id="sobre">
-		<section>
-			<h2>SOBRE MIM</h2>
-			<div class="c-sobre">
-				<img class="i-sobre" src="/image/image-sobre.png" alt="Foto de Luan Andrade">
-				<div class="t-sobre">
-					<p>Estou iniciando o curso de Ciência de Dados pela UEPB. Ja tenho conhecimentos básicos em Python, HTML, CSS, Javascript, Git, Github e UI Design(Figma). Gosto de no meu tempo livre ler, correr, praticar calistenia e sempre estou buscando aprender coisas novas e criar novos hábitos.</p>
-				</div>
+
 		</section>
-	</div>
-	</div>
-	<div id="projetos">
-		<h3>PROJETOS</h3>
-		<section>
-			<article>
-				<span>EM BREVE...</span>
-			</article>
-			<article>
-				<span>EM BREVE...</span>
-			</article>
-			<article>
-				<span>EM BREVE...</span>
-			</article>
+
+		<section id="sobre">
+			<img src="/image/image-sobre.png">
+			<p>
+				Estou cursando Ciência de Dados pela UEPB.Ja tenho conhecimentos em Python, HTML, CSS, Javascript, Git/GitHub e UI Design(Figma).Gosto de no meu tempo livre ler, correr, academia e sempre estou buscando aprender e criar novos hábitos.
+			</p>
 		</section>
-	</div>
-	<div id="contato">
-		<h4>CONTATO</h4>
-		<div>
-			<span>E-mail para contato: andradeluan2710@gmail.com</span>
-			<span>Linkedin: <a href="https://www.linkedin.com/in/andradeluan/">andradeluan</a> </span>
-			<span>GitHub: <a href="https://github.com/andradeluan">andradeluan</a></span>
-			<span>Telefone: (83) 98729 - 3599</span>
-		</div>
-	</div>
-	<footer>
-		<p>© 2023 Luan Andrade. Todos os direitos reservados.</p>
-	</footer>
+		<section id="projetos">
+			<div class="efeito1"></div>
+			<p>
+				Em Desenvolvimento...
+			</p>
+		</section>
+	</main>
 </body>
-<script>
-	function clickMenu() {
-		if (itens.style.display == 'block') {
-			itens.style.display = 'none'
-			header.style.height = '6.25rem'
-		}
-		else{
-      itens.style.display = 'block'
-			header.style.height = '20rem'
-    }
-  }
-</script>
+
 </html>
