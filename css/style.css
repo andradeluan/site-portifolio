@@ -49,6 +49,16 @@ li {
   line-height: normal;
 }
 
+a {
+  text-decoration: none
+}
+a:visited{
+  color: #f5f7fa;
+}
+a:hover{
+  color: #d7263d;
+}
+
 #home {
   background: #2e294e;
   height: 51.5rem;
@@ -56,9 +66,7 @@ li {
 }
 
 .efeito1 {
-  display: grid;
-  grid-template-columns: auto auto;
-  place-self: center;
+  display: flex;
   position: absolute;
   width: 37.5rem;
   height: 37.5rem;
@@ -69,6 +77,22 @@ li {
     rgba(215, 38, 61, 0) 100%
   );
   z-index: 0;
+  align-self: flex-end;
+}
+
+.efeito2 {
+  display: flex;
+  justify-self: flex-end;
+  width: 25rem;
+  height: 25rem;
+  position: absolute;
+  border-radius: 25rem;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(245, 247, 250, 0.2) 0%,
+    rgba(245, 247, 250, 0) 100%
+  );
+  z-index: 0;
 }
 
 .texto-home {
@@ -76,6 +100,12 @@ li {
   place-self: center;
   position: absolute;
   z-index: 1;
+}
+
+.texto-home div {
+  display: flex;
+  place-content: space-evenly;
+  margin-top: 4%;
 }
 
 .texto1-home {
@@ -117,6 +147,11 @@ span span {
   line-height: normal;
 }
 
+#home img {
+  width: 42px;
+  height: 42px;
+}
+
 #sobre {
   height: 51.5rem;
   display: grid;
@@ -156,4 +191,20 @@ img {
   place-self: center;
   position: absolute;
   z-index: 1;
+}
+
+footer {
+  height: 6.25rem;
+  background: #f5f7fa;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+footer p {
+  color: #0b0c12;
+  font-family: Poppins;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
