@@ -3,62 +3,115 @@
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Recursive:wght,CASL,CRSV,MONO@400,0,0,1;700,1,0,1&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/css/reset.css">
-	<link rel="stylesheet" href="/css/normalize.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/assets/ICON-LOGO.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="shortcut icon" href="/image/icons/_..svg">
-	<title>>Luan Andrade.</title>
+	<title>Luan Andrade</title>
 </head>
 
 <body>
-	<header>
-		<h1>Luan Andrade<span>.</span></h1>
-		<nav>
+	<header id="HEADER">
+		<div class="navbar">
+			<img src="/assets/LOGO.svg" alt="Logo Luan Andrade">
+			<a class="icon" onclick="myFunction()">
+				<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+					<path d="M8 16H40M8 32H40" stroke="#CCF0FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+			</a>
+
+		</div>
+		<nav id="nav">
 			<ul>
-				<li><a href="#home">Home</a></li><!--colocar o href-->
-				<li><a href="#sobre">Sobre</a></li>
-				<li><a href="#projetos">Projetos</a></li>
+				<li><a href="SOBRE.html">SOBRE</a></li>
+				<li><a href="PROJETOS.html">PROJETOS</a></li>
+				<li><a href="CONTATO.html">CONTATO</a></li>
 			</ul>
 		</nav>
 	</header>
-	<main>
-		<section id="home">
-			<div class="efeito1"></div>
-			<div class="efeito2"></div>
-			<div class="texto-home">
-				<span class="texto1-home">Bem-Vindo ✌️</span>
-				<h1 class="texto2-home">Eu sou Luan Andrade</h1>
-				<span class="texto3-home">Desenvolvedor <span class="e">&</span> Cientista de Dados</span>
-				<div>
-					<a href="https://github.com/andradeluan"><img src="/image/icons/icon-github.svg"></img></a>
-					<a href="https://github.com/andradeluan"><img src="/image/icons/icon-linkedin.svg"></img></a>
-				</div>
-
+	<section id="HOME">
+		<div class="conteudo">
+			<h1>Luan Andrade</h1>
+			<h2>Desenvolvedor & Cientista de Dados</h2>
+			<div class="icon-social">
+				<a href="https://github.com/andradeluan"><img src="/assets/icon-social-github.svg" alt=""></a>
+				<a href="https://www.linkedin.com/in/andradeluan/"><img src="/assets/icon-social-linkedin.svg" alt=""></a>
 			</div>
+		</div>
+		<figure>
+			<img src="/assets/ExtraSmall-figure.svg" alt="">
+			<img src="/assets/SmallMedium-figure.svg" alt="">
+			<img src="/assets/Large-figure.svg" alt="">
 
-		</section>
-
-		<section id="sobre">
-			<img src="/image/image-sobre.png">
-			<p>
-				Estou cursando Ciência de Dados pela UEPB.Ja tenho conhecimentos em Python, HTML, CSS, Javascript, Git/GitHub e UI Design(Figma).Gosto de no meu tempo livre ler, correr, academia e sempre estou buscando aprender e criar novos hábitos.
-			</p>
-		</section>
-		<section id="projetos">
-			<div class="efeito1"></div>
-			<div class="efeito2"></div>
-			<p>
-				Em Desenvolvimento...
-			</p>
-		</section>
-	</main>
+		</figure>
+	</section>
+	<section id="SOBRE">
+		<figure>
+			<img src="/assets/ExtraSmall-image-sobre.svg
+			" alt="">
+			<img src="/assets/LargeMedium-image-sobre.svg" alt="">
+		</figure>
+		<div class="texto-sobre">
+			<p>Me chamo Luan, tenho 20 anos e atualmente estou cursando Ciência de Dados na UEPB. Sou fascinado com a evolução da tecnologia e em como ela nos ajuda a resolver problemas complexos...
+				Estou em busca de um emprego/estágio a fim de acelerar minha evolução na área do desenvolvimento de software. Possuo conhecimento em Python, HTML, CSS, JavaScript, UI Design (Figma) e Git. Ultimamente, estou estudando POO com Python, Django e Banco de Dados.</p>
+		</div>
+	</section>
+	<section id="PROJETOS">
+		<article class='card'>
+			<div class="parte1-card">
+				<div class="bg-img-card">
+					<img src="/assets/ES-img-card.svg" alt="imagem de Luan Andrade">
+					<img src="/assets/LMS-img-card.svg" alt="imagem de Luan Andrade">
+				</div>
+				<div class="lista-icons-tech-card">
+					<img src="/assets/html5.svg" alt="imagem HTML 5" title="HTML 5">
+					<img src="/assets/css3.svg" alt="imagem CSS 3" title="CSS 5">
+					<img src="/assets/js.svg" alt="imagem JavaScript" title="JavaScript">
+				</div>
+			</div>
+			<div class="parte2-card">
+				<div class="texto-card">
+					<h3>Site Portifólio</h3>
+					<p>Desenvolvi este site visando relembrar meus conhecimentos de HTML, CSS e JavaScript...
+						Bem como, expor futuros projetos pessoais.</p>
+				</div>
+				<div class="buttons-card">
+					<a href="/">Ver Projeto</a>
+					<a href="https://github.com/andradeluan/site-portifolio">&lt;Code/&gt;</a>
+				</div>
+			</div>
+		</article>
+	</section>
+	<section id="CONTATO">
+		<div>
+			<img src="/assets/LOGO.svg" alt="Logo Luan Andrade">
+			<div class="icon-social">
+				<a href="https://github.com/andradeluan"><img src="/assets/icon-social-github.svg" alt=""></a>
+				<a href="https://www.linkedin.com/in/andradeluan/"><img src="/assets/icon-social-linkedin.svg" alt=""></a>
+			</div>
+		</div>
+		<div>
+			<h4>Navegação</h4>
+			<ul id="menu-footer">
+				<li><a href="SOBRE.html">SOBRE</a></li>
+				<li><a href="PROJETOS.html">PROJETOS</a></li>
+				<li><a href="CONTATO.html">CONTATO</a></li>
+			</ul>
+		</div>
+		<div>
+			<h4>Contato</h4>
+			<ul id="contato-footer">
+				<li><span href="SOBRE.html">andradeluan2710@gmail.com</span></li>
+				<li><span href="PROJETOS.html">83 98729 3599</span></li>
+				<li><span href="CONTATO.html">João Pessoa, Paraíba</span></li>
+			</ul>
+		</div>
+	</section>
 	<footer>
-		<p>© 2023 Luan Andrade. Todos os direitos reservados.</p>
+		<span>© 2023 Luan Andrade | Todos os direitos.</span>
 	</footer>
+	<script src="js/main.js"></script>
 </body>
 
 </html>

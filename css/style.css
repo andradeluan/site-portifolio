@@ -1,210 +1,67 @@
-header {
-  border-bottom: 3px solid #d7263d;
-  background: #2e294e;
-  height: 12.5rem;
-  display: flex;
-  justify-content: space-between;
-}
-header h1 {
-  font-family: "Recursive", sans-serif;
-  color: #f5f7fa;
-  font-family: Recursive;
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  display: flex;
-  justify-content: flex-start;
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 56px;
+  background-color: #4d6de3;
+  display: grid;
+  grid-template-columns: auto auto;
   align-items: center;
-  margin-left: 8%;
+  place-content: space-between;
 }
-h1 span {
-  font-family: "Recursive", sans-serif;
-  color: #d7263d;
-  font-family: Recursive;
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+.navbar img {
+  margin-left: 16px;
 }
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-right: 5%;
+.navbar a {
+  margin-right: 16px;
+  margin-top: 4px;
+}
+#nav {
+  position: fixed;
+  top: 55px;
+  width: 100%;
+  display: none;
+  background-color: #4d6de3;
+  justify-content: center;
 }
 ul {
-  display: inline-flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 1.875rem;
+  text-align: center;
+  margin-top: 32px;
 }
 li {
-  color: #f5f7fa;
-  font-family: Recursive;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  margin-bottom: 32px;
 }
-
 a {
-  text-decoration: none
-}
-a:visited{
-  color: #f5f7fa;
-}
-a:hover{
-  color: #d7263d;
-}
-
-#home {
-  background: #2e294e;
-  height: 51.5rem;
-  display: grid;
-}
-
-.efeito1 {
-  display: flex;
-  position: absolute;
-  width: 37.5rem;
-  height: 37.5rem;
-  border-radius: 37.5rem;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(215, 38, 61, 0.3) 0%,
-    rgba(215, 38, 61, 0) 100%
-  );
-  z-index: 0;
-  align-self: flex-end;
-}
-
-.efeito2 {
-  display: flex;
-  justify-self: flex-end;
-  width: 25rem;
-  height: 25rem;
-  position: absolute;
-  border-radius: 25rem;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(245, 247, 250, 0.2) 0%,
-    rgba(245, 247, 250, 0) 100%
-  );
-  z-index: 0;
-}
-
-.texto-home {
-  display: grid;
-  place-self: center;
-  position: absolute;
-  z-index: 1;
-}
-
-.texto-home div {
-  display: flex;
-  place-content: space-evenly;
-  margin-top: 4%;
-}
-
-.texto1-home {
-  color: #f5f7fa;
+  color: #f1fcfd;
   font-family: Poppins;
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-align: center;
-}
-
-.texto2-home {
-  display: block;
-  color: #f5f7fa;
-  font-family: Poppins;
-  font-size: 6rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-align: center;
-}
-.texto3-home {
-  color: #f5f7fa;
-  font-family: Recursive;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-align: center;
-}
-
-span span {
-  color: #d7263d;
-  font-family: Recursive;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-#home img {
-  width: 42px;
-  height: 42px;
-}
-
-#sobre {
-  height: 51.5rem;
-  display: grid;
-  background: #f5f7fa;
-  grid-template-columns: auto auto;
-  align-content: center;
-}
-img {
-  width: 28.5625rem;
-  height: 28.5625rem;
-  flex-shrink: 0;
-  margin-left: 8%;
-}
-#sobre p {
-  width: 41.25rem;
-  color: #0b0c12;
-  font-family: Poppins;
-  font-size: 2rem;
+  font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-right: 8%;
-}
-#projetos {
-  background: #2e294e;
-  height: 51.5rem;
-  display: grid;
-}
-
-#projetos p {
-  color: #f5f7fa;
-  font-family: Poppins;
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  place-self: center;
-  position: absolute;
-  z-index: 1;
 }
 
 footer {
-  height: 6.25rem;
-  background: #f5f7fa;
   display: flex;
-  align-items: center;
-  justify-content: center
+  background: #393737;
+  height: 48px;
+  text-align: center;
 }
-footer p {
-  color: #0b0c12;
+footer span {
+  color: #fff5f5;
   font-family: Poppins;
-  font-size: 2rem;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  align-self: center;
+  margin: 0 auto;
+}
+/*Small*/
+@media only screen and (min-width: 400px) {
+}
+/*Medium*/
+@media only screen and (min-width: 900px) {
+}
+/*Large*/
+@media only screen and (min-width: 1280px) {
 }
