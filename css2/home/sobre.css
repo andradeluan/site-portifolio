@@ -1,0 +1,42 @@
+#SOBRE {
+  width: 100%;
+  background: #89a0f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#SOBRE img {
+  margin-top: 90px;
+  width: 283px;
+  height: 300px;
+}
+#SOBRE p {
+  margin-top: 32px;
+  margin-bottom: 90px;
+  padding: 0px 32px;
+  color: #f2feff;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (min-width: 900px) {
+  #SOBRE {
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+  #SOBRE img {
+    width: 378px;
+    height: 400px;
+  }
+  #SOBRE p {
+    margin: auto;
+    min-width: 425px;
+    max-width: 552px;
+    font-size: 20px;
+  }
+}

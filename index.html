@@ -6,8 +6,11 @@
 	<link rel="stylesheet" href="/css/reset.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="/assets/ICON-LOGO.png">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/css/style.css">
+
 	<title>Luan Andrade</title>
 </head>
 
@@ -15,22 +18,19 @@
 	<header id="HEADER">
 		<div class="navbar">
 			<img src="/assets/LOGO.svg" alt="Logo Luan Andrade">
-			<a class="icon" onclick="myFunction()">
-				<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-					<path d="M8 16H40M8 32H40" stroke="#CCF0FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-				</svg>
-			</a>
-
+			<svg class="icon" onclick="myFunction()" xmlns="http://www.w3.org/2000/svg" width="48" height="54" viewBox="0 0 48 48" fill="none">
+				<path d="M8 16H40M8 32H40" stroke="#CCF0FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
 		</div>
 		<nav id="nav">
 			<ul>
-				<li><a href="SOBRE.html">SOBRE</a></li>
-				<li><a href="PROJETOS.html">PROJETOS</a></li>
-				<li><a href="CONTATO.html">CONTATO</a></li>
+				<li><a onclick="myFunction()" href="#SOBRE">SOBRE</a></li>
+				<li><a onclick="myFunction()" href="#PROJETOS">PROJETOS</a></li>
+				<li><a onclick="myFunction()" href="#CONTATO">CONTATO</a></li>
 			</ul>
 		</nav>
 	</header>
-	<section id="HOME">
+	<article id="HOME">
 		<div class="conteudo">
 			<h1>Luan Andrade</h1>
 			<h2>Desenvolvedor & Cientista de Dados</h2>
@@ -40,31 +40,35 @@
 			</div>
 		</div>
 		<figure>
-			<img src="/assets/ExtraSmall-figure.svg" alt="">
-			<img src="/assets/SmallMedium-figure.svg" alt="">
-			<img src="/assets/Large-figure.svg" alt="">
+			<img class="fig-extrasmall" src="/assets/ExtraSmall-figure.svg" alt="">
+			<img class="fig-smallmedium" src="/assets/SmallMedium-figure.svg" alt="">
+			<img class="fig-large" src="/assets/Large-figure.svg" alt="">
 
 		</figure>
-	</section>
-	<section id="SOBRE">
+	</article>
+	<article id="SOBRE">
 		<figure>
-			<img src="/assets/ExtraSmall-image-sobre.svg
+			<img class="img-extrasmall" src="/assets/ExtraSmall-image-sobre.svg
 			" alt="">
-			<img src="/assets/LargeMedium-image-sobre.svg" alt="">
+			<img class="img-largemedium" src="/assets/LargeMedium-image-sobre.svg" alt="">
 		</figure>
 		<div class="texto-sobre">
-			<p>Me chamo Luan, tenho 20 anos e atualmente estou cursando Ciência de Dados na UEPB. Sou fascinado com a evolução da tecnologia e em como ela nos ajuda a resolver problemas complexos...
+			<p>Me chamo Luan, tenho 20 anos e atualmente estou cursando Ciência de Dados na UEPB. Sou fascinado com a evolução da tecnologia e em como ela nos ajuda a resolver problemas complexos.<br>
 				Estou em busca de um emprego/estágio a fim de acelerar minha evolução na área do desenvolvimento de software. Possuo conhecimento em Python, HTML, CSS, JavaScript, UI Design (Figma) e Git. Ultimamente, estou estudando POO com Python, Django e Banco de Dados.</p>
 		</div>
-	</section>
-	<section id="PROJETOS">
+	</article>
+	<article id="PROJETOS">
 		<article class='card'>
 			<div class="parte1-card">
-				<div class="bg-img-card">
-					<img src="/assets/ES-img-card.svg" alt="imagem de Luan Andrade">
-					<img src="/assets/LMS-img-card.svg" alt="imagem de Luan Andrade">
+				<div class="lista-icons-tech-card1">
+					<img src="/assets/html5.svg" alt="imagem HTML 5" title="HTML 5">
+					<img src="/assets/css3.svg" alt="imagem CSS 3" title="CSS 5">
+					<img src="/assets/js.svg" alt="imagem JavaScript" title="JavaScript">
 				</div>
-				<div class="lista-icons-tech-card">
+				<div class="bg-img-card">
+					<img src="/assets/img-card.svg" alt="imagem de Luan Andrade">
+				</div>
+				<div class="lista-icons-tech-card2">
 					<img src="/assets/html5.svg" alt="imagem HTML 5" title="HTML 5">
 					<img src="/assets/css3.svg" alt="imagem CSS 3" title="CSS 5">
 					<img src="/assets/js.svg" alt="imagem JavaScript" title="JavaScript">
@@ -73,30 +77,30 @@
 			<div class="parte2-card">
 				<div class="texto-card">
 					<h3>Site Portifólio</h3>
-					<p>Desenvolvi este site visando relembrar meus conhecimentos de HTML, CSS e JavaScript...
+					<p>Desenvolvi este site visando relembrar meus conhecimentos de HTML, CSS e JavaScript.<br>
 						Bem como, expor futuros projetos pessoais.</p>
 				</div>
-				<div class="buttons-card">
-					<a href="/">Ver Projeto</a>
-					<a href="https://github.com/andradeluan/site-portifolio">&lt;Code/&gt;</a>
+				<div class="bnt-card">
+					<a class="bnt1" href="/">Ver Projeto</a>
+					<a class="bnt2" href="https://github.com/andradeluan/site-portifolio">&lt;Code/&gt;</a>
 				</div>
 			</div>
 		</article>
-	</section>
-	<section id="CONTATO">
-		<div>
-			<img src="/assets/LOGO.svg" alt="Logo Luan Andrade">
+	</article>
+	<article id="CONTATO">
+		<div class="contato">
+			<img class="logo-contato" src="/assets/LOGO.svg" alt="Logo Luan Andrade">
 			<div class="icon-social">
-				<a href="https://github.com/andradeluan"><img src="/assets/icon-social-github.svg" alt=""></a>
-				<a href="https://www.linkedin.com/in/andradeluan/"><img src="/assets/icon-social-linkedin.svg" alt=""></a>
+				<a href="https://github.com/andradeluan"><img src="/assets/icon-social-github2.svg" alt=""></a>
+				<a href="https://www.linkedin.com/in/andradeluan/"><img src="/assets/icon-social-linkedin2.svg" alt=""></a>
 			</div>
 		</div>
-		<div>
+		<div class="nav-contato">
 			<h4>Navegação</h4>
 			<ul id="menu-footer">
-				<li><a href="SOBRE.html">SOBRE</a></li>
-				<li><a href="PROJETOS.html">PROJETOS</a></li>
-				<li><a href="CONTATO.html">CONTATO</a></li>
+				<li><a href="#SOBRE">SOBRE</a></li>
+				<li><a href="#PROJETOS">PROJETOS</a></li>
+				<li><a href="#CONTATO">CONTATO</a></li>
 			</ul>
 		</div>
 		<div>
@@ -107,7 +111,7 @@
 				<li><span href="CONTATO.html">João Pessoa, Paraíba</span></li>
 			</ul>
 		</div>
-	</section>
+	</article>
 	<footer>
 		<span>© 2023 Luan Andrade | Todos os direitos.</span>
 	</footer>

@@ -1,8 +1,16 @@
-function myFunction() {
-  var x = document.getElementById("nav");
-  if (x.style.display === "flex") {
-    x.style.display = "none";
+function menu() {
+  var menu = document.getElementById("menu");
+  var close = document.getElementById("close");
+  var open = document.getElementById("open");
+  if (menu.style.display === "flex") {
+    menu.style.display = "none";
+    close.style.display = "none";
+    open.style.display = "flex";
+
+
   } else {
-    x.style.display = "flex";
+    menu.style.display = "flex";
+    close.style.display = "flex";
+    open.style.display = "none";
   }
 }
