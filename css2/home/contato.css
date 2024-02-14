@@ -1,0 +1,104 @@
+#CONTATO {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #00145c;
+  gap: 32px;
+}
+.contato-logo {
+  margin-top: 90px;
+  text-align: center;
+}
+.contato-icons {
+  margin-top: 32px;
+}
+.contato-icons img {
+  margin: 0px 10px;
+}
+.contato-nav {
+  align-items: flex-start;
+  width: 240px;
+}
+#CONTATO h4 {
+  margin-bottom: 20px;
+  color: #f1fcfd;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.contato-nav-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contato-nav-lista li a {
+  color: #f1fcfd;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.contato {
+  align-items: flex-start;
+  width: 240px;
+  margin-bottom: 90px;
+}
+.contato-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contato-lista span {
+  color: #f1fcfd;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (min-width: 600px) {
+  #CONTATO {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+  }
+  .contato-logo {
+    width: 100%;
+  }
+  .contato-nav {
+    align-items: flex-start;
+    flex-grow: 1;
+    margin-bottom: 90px;
+    max-width: 240px;
+  }
+
+  .contato {
+    flex-grow: 1;
+    max-width: 240px;
+  }
+}
+@media (min-width: 900px) {
+  #CONTATO {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+    gap: 110px;
+  }
+  .contato-logo {
+    margin: 100px 0px;
+    width: 255px;
+    height: 169px;
+  }
+  .contato-nav {
+    margin: 100px 0px;
+    width: 165px;
+  }
+  .contato {
+    margin: 100px 0px;
+    width: 240px;
+  }
+}
